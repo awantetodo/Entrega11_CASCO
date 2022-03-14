@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// Condicionales  
+@if $modo == dark {
+
+    body {
+        background-color: $dark_background;
+    }
+
+    .card {
+        background-color: $dark_background_card;
+        color: $dark_text;
+        a {
+            color: $dark_link;
+        }
+    }
+}
+
+// Bucles  me re cuestan!!!! pero mal!!! me parten la cabeza. voy a tener que seguir repasando esto puntualmente porque se me hace muy abstracto
+@for $i from 1 through 6 {
+    .h#{$i} {
+        color: white;
+        font-size: $header_alto / #{$i};
+    }
+}
+
+@for $j from 1 through 6 {
+
+    .image-#{$j} {
+        width: $header_alto / #{$j};
+        height: auto;
+    }
+}
+
+// each
+@each $var in red, blue, green, purple {
+    .#{$var} {
+        color: $var;
+        height: $header_alto / 2;
+    }
+}
+

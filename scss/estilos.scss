@@ -1,0 +1,9 @@
+/*me hizo sufrir mucho el tema de las variables. 
+en ningun lado lei que era prioritario que figure arriba de todo el listado de scss para que funcione correctamente. 
+de otra manera me sale error "undefined variable" y rompe todo el sitio :/ */
+@import "variables.scss";
+@import "main.scss";
+@import "navbar.scss";
+@import "grilla.scss";
+@import "generales.scss";
+@import "social.scss"

@@ -1,0 +1,252 @@
+/*me hizo sufrir mucho el tema de las variables. 
+en ningun lado lei que era prioritario que figure arriba de todo el listado de scss para que funcione correctamente. 
+de otra manera me sale error "undefined variable" y rompe todo el sitio :/ */
+* {
+  margin-top: 5px;
+  padding-top: auto;
+  letter-spacing: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* ejemplo de variable en $colorfondonav*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 black;
+  flex: auto;
+}
+
+/*ejemplo nesting y uso del selector & en SAAS*/
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li:hover:not(.active) {
+  background-color: #111;
+}
+li:hover:not(.active) {
+  background-color: #111;
+}
+li .active {
+  background-color: #ff0000;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.5fr 1fr 0.3fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.div1 {
+  grid-area: 1/1/2/2;
+  background-color: grey;
+}
+
+.div2 {
+  grid-area: 1/2/2/3;
+  background-color: lightgray;
+}
+
+.div3 {
+  grid-area: 1/3/2/4;
+  background-color: grey;
+}
+
+.div4 {
+  grid-area: 2/1/3/2;
+  background-color: grey;
+}
+
+.div5 {
+  grid-area: 2/2/3/3;
+  background-color: lightgray;
+}
+
+.div6 {
+  grid-area: 2/3/3/4;
+  background-color: grey;
+}
+
+.div7 {
+  grid-area: 3/1/4/2;
+  background-color: grey;
+}
+
+.div8 {
+  grid-area: 3/2/4/3;
+  background-color: lightgray;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.div9 {
+  grid-area: 3/3/4/4;
+  background: gray;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.h1 {
+  color: white;
+  font-size: padding 30px/1;
+}
+
+.h2 {
+  color: white;
+  font-size: padding 30px/2;
+}
+
+.h3 {
+  color: white;
+  font-size: padding 30px/3;
+}
+
+.h4 {
+  color: white;
+  font-size: padding 30px/4;
+}
+
+.h5 {
+  color: white;
+  font-size: padding 30px/5;
+}
+
+.h6 {
+  color: white;
+  font-size: padding 30px/6;
+}
+
+.image-1 {
+  width: padding 30px/1;
+  height: auto;
+}
+
+.image-2 {
+  width: padding 30px/2;
+  height: auto;
+}
+
+.image-3 {
+  width: padding 30px/3;
+  height: auto;
+}
+
+.image-4 {
+  width: padding 30px/4;
+  height: auto;
+}
+
+.image-5 {
+  width: padding 30px/5;
+  height: auto;
+}
+
+.image-6 {
+  width: padding 30px/6;
+  height: auto;
+}
+
+.red {
+  color: red;
+  height: padding 30px/2;
+}
+
+.blue {
+  color: blue;
+  height: padding 30px/2;
+}
+
+.green {
+  color: green;
+  height: padding 30px/2;
+}
+
+.purple {
+  color: purple;
+  height: padding 30px/2;
+}
+
+/*jugando un poco con los parametros del menu de social para personalizarlo... */
+.social {
+  background-color: slateblue;
+  width: 400px;
+  position: sticky;
+  top: padding 30px50;
+  /*clave el margin auto para centrar todo en el div*/
+  margin: auto;
+  right: 10px;
+  left: 10px;
+}
+.social ul {
+  list-style: none;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+}
+.social ul li {
+  transition: all 0.5s ease;
+}
+.social ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.social ul li:hover {
+  transform: scale(1.2);
+}
+
+.icon-social, :hover.btn--yotube, :hover.btn--insta, :hover.btn--facebook, :hover.btn--twitter {
+  font-size: 2.5rem;
+}
+
+/*Creamos el bucle para usar los valores del mapa*/
+:hover.btn--twitter {
+  background-color: #55acee;
+}
+
+:hover.btn--facebook {
+  background-color: #3a5795;
+}
+
+:hover.btn--insta {
+  background-color: #aa30c2;
+}
+
+:hover.btn--yotube {
+  background-color: #c72f2f;
+}
+
+.box {
+  height: 50px;
+  width: 500px;
+  background-color: red;
+}
+
+/*# sourceMappingURL=estilos.css.map */
